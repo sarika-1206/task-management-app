@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>TaskFlow | Smart Task Management</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     LANDING PAGE
+========================================================= -->
+
+<div id="landingPage" class="landing-page">
+
+
+    <!-- Background decoration -->
+
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+    <div class="background-orb orb-three"></div>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="landing-nav">
+
+        <div class="landing-brand">
+
+            <div class="brand-logo">
+                ✓
+            </div>
+
+            <span>TaskFlow</span>
+
+        </div>
+
+
+        <div class="landing-nav-links">
+
+            <a href="#features">
+                Features
+            </a>
+
+            <a href="#workflow">
+                How it works
+            </a>
+
+            <button
+                class="nav-signin-btn"
+                onclick="showAuthPage('login')"
+            >
+                Sign In
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- HERO -->
+
+    <section class="hero-section">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                <span class="status-dot"></span>
+                Smart productivity workspace
+            </div>
+
+
+            <h1>
+                Turn your tasks into
+                <span>progress.</span>
+            </h1>
+
+
+            <p class="hero-description">
+
+                TaskFlow helps you organize your work,
+                prioritize what matters, and keep track
+                of your progress — all from one beautiful
+                workspace.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <button
+                    class="hero-primary-btn"
+                    onclick="showAuthPage('register')"
+                >
+                    Get Started
+                    <span>→</span>
+                </button>
+
+
+                <button
+                    class="hero-secondary-btn"
+                    onclick="showAuthPage('login')"
+                >
+                    Sign In
+                </button>
+
+            </div>
+
+
+            <div class="hero-trust">
+
+                <div class="trust-item">
+                    <span>✓</span>
+                    Secure authentication
+                </div>
+
+                <div class="trust-item">
+                    <span>✓</span>
+                    Real-time task tracking
+                </div>
+
+                <div class="trust-item">
+                    <span>✓</span>
+                    Responsive workspace
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HERO PREVIEW -->
+
+        <div class="hero-preview">
+
+            <div class="preview-glow"></div>
+
+            <div class="preview-window">
+
+                <div class="preview-topbar">
+
+                    <div class="preview-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="preview-title">
+                        TaskFlow Workspace
+                    </div>
+
+                </div>
+
+
+                <div class="preview-body">
+
+                    <div class="preview-sidebar">
+
+                        <div class="preview-side-logo">
+                            ✓
+                        </div>
+
+                        <div class="preview-side-line active"></div>
+                        <div class="preview-side-line"></div>
+                        <div class="preview-side-line"></div>
+                        <div class="preview-side-line"></div>
+
+                    </div>
+
+
+                    <div class="preview-main">
+
+                        <div class="preview-welcome">
+                            <div>
+                                <small>OVERVIEW</small>
+                                <h3>Good day 👋</h3>
+                            </div>
+
+                            <div class="preview-add">
+                                + New Task
+                            </div>
+                        </div>
+
+
+                        <div class="preview-stats">
+
+                            <div class="preview-stat">
+                                <span>ALL TASKS</span>
+                                <strong>12</strong>
+                                <small>Tasks in workspace</small>
+                            </div>
+
+                            <div class="preview-stat">
+                                <span>COMPLETED</span>
+                                <strong>8</strong>
+                                <small>Tasks completed</small>
+                            </div>
+
+                            <div class="preview-stat">
+                                <span>PROGRESS</span>
+                                <strong>67%</strong>
+                                <div class="mini-progress">
+                                    <div></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="preview-task-area">
+
+                            <div class="preview-task-title">
+                                My Tasks
+                            </div>
+
+
+                            <div class="preview-task">
+
+                                <div class="preview-check checked">
+                                    ✓
+                                </div>
+
+                                <div class="preview-task-info">
+                                    <strong>
+                                        Complete internship project
+                                    </strong>
+
+                                    <small>
+                                        High priority · Today
+                                    </small>
+                                </div>
+
+                                <span class="preview-completed">
+                                    Done
+                                </span>
+
+                            </div>
+
+
+                            <div class="preview-task">
+
+                                <div class="preview-check">
+                                </div>
+
+                                <div class="preview-task-info">
+                                    <strong>
+                                        Prepare project presentation
+                                    </strong>
+
+                                    <small>
+                                        Medium priority · Tomorrow
+                                    </small>
+                                </div>
+
+                                <span class="preview-progress">
+                                    In progress
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FEATURE SECTION -->
+
+    <section
+        id="features"
+        class="features-section"
+    >
+
+        <div class="section-heading">
+
+            <span>
+                POWERFUL WORKSPACE
+            </span>
+
+            <h2>
+                Everything you need to stay organized.
+            </h2>
+
+            <p>
+                Designed to make everyday task management
+                simple, focused and productive.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon purple">
+                    ✓
+                </div>
+
+                <h3>
+                    Smart Task Management
+                </h3>
+
+                <p>
+                    Create, update, complete and delete
+                    tasks from one organized workspace.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon blue">
+                    ◈
+                </div>
+
+                <h3>
+                    Productivity Insights
+                </h3>
+
+                <p>
+                    Track your completed tasks, pending
+                    work and overall completion progress.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon green">
+                    ✓
+                </div>
+
+                <h3>
+                    Priority & Deadlines
+                </h3>
+
+                <p>
+                    Set priorities and due dates so
+                    important work stays visible.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon orange">
+                    ◷
+                </div>
+
+                <h3>
+                    Fast Search & Filters
+                </h3>
+
+                <p>
+                    Quickly find tasks and switch between
+                    pending and completed work.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon pink">
+                    ♙
+                </div>
+
+                <h3>
+                    Personal Workspace
+                </h3>
+
+                <p>
+                    Your tasks are connected to your
+                    authenticated account.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon cyan">
+                    ◉
+                </div>
+
+                <h3>
+                    Responsive Design
+                </h3>
+
+                <p>
+                    Use your task workspace comfortably
+                    across desktop and mobile screens.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- WORKFLOW -->
+
+    <section
+        id="workflow"
+        class="workflow-section"
+    >
+
+        <div class="workflow-content">
+
+            <div class="section-heading left">
+
+                <span>
+                    SIMPLE WORKFLOW
+                </span>
+
+                <h2>
+                    From idea to completed task.
+                </h2>
+
+                <p>
+                    TaskFlow gives your work a clear structure
+                    so you always know what needs attention.
+                </p>
+
+            </div>
+
+
+            <div class="workflow-steps">
+
+                <div class="workflow-step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div>
+                        <h3>
+                            Capture
+                        </h3>
+
+                        <p>
+                            Add a task with a title,
+                            description, priority and due date.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div>
+                        <h3>
+                            Organize
+                        </h3>
+
+                        <p>
+                            Search and filter your workspace
+                            to focus on the work that matters.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div>
+                        <h3>
+                            Complete
+                        </h3>
+
+                        <p>
+                            Mark tasks complete and watch
+                            your productivity progress grow.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="cta-section">
+
+        <div class="cta-card">
+
+            <div>
+
+                <span>
+                    READY TO GET ORGANIZED?
+                </span>
+
+                <h2>
+                    Build your productive workspace.
+                </h2>
+
+                <p>
+                    Create your TaskFlow account and
+                    start managing your tasks.
+                </p>
+
+            </div>
+
+
+            <button
+                onclick="showAuthPage('register')"
+                class="cta-button"
+            >
+                Create Account →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <footer class="landing-footer">
+
+        <div>
+            © 2026 TaskFlow
+        </div>
+
+        <div>
+            Smart task management workspace
+        </div>
+
+    </footer>
+
+</div>
+
+
+
+<!-- =========================================================
+     AUTH PAGE
+========================================================= -->
+
+<div
+    id="authPage"
+    class="auth-page"
+    style="display:none;"
+>
+
+
+    <div class="auth-background-orb auth-orb-one"></div>
+    <div class="auth-background-orb auth-orb-two"></div>
+
+
+    <div class="auth-shell">
+
+
+        <!-- LEFT -->
+
+        <div class="auth-brand-panel">
+
+            <button
+                class="back-home-btn"
+                onclick="showLandingPage()"
+            >
+                ← Back to home
+            </button>
+
+
+            <div class="auth-brand-content">
+
+                <div class="auth-big-logo">
+                    ✓
+                </div>
+
+                <h1>
+                    TaskFlow
+                </h1>
+
+                <p>
+                    Organize your work.
+                    <br>
+                    Accomplish your goals.
+                </p>
+
+
+                <div class="auth-benefits">
+
+                    <div>
+                        <span>✓</span>
+                        Manage your tasks easily
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Track your productivity
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Stay organized every day
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT -->
+
+        <div class="auth-form-panel">
+
+
+            <!-- LOGIN -->
+
+            <div
+                id="loginSection"
+                class="auth-form-container"
+            >
+
+                <span class="form-eyebrow">
+                    WELCOME BACK
+                </span>
+
+                <h2>
+                    Sign in to your account
+                </h2>
+
+                <p class="auth-form-description">
+                    Continue managing your tasks.
+                </p>
+
+
+                <form id="loginForm">
+
+                    <div class="form-field">
+
+                        <label>
+                            Email address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label>
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="auth-submit"
+                    >
+                        Sign In
+                    </button>
+
+                </form>
+
+
+                <p
+                    id="loginMessage"
+                    class="auth-message"
+                ></p>
+
+
+                <div class="auth-switch">
+
+                    Don't have an account?
+
+                    <button
+                        type="button"
+                        onclick="showRegister()"
+                    >
+                        Create account
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- REGISTER -->
+
+            <div
+                id="registerSection"
+                class="auth-form-container"
+                style="display:none;"
+            >
+
+                <span class="form-eyebrow">
+                    GET STARTED
+                </span>
+
+                <h2>
+                    Create your account
+                </h2>
+
+                <p class="auth-form-description">
+                    Start organizing your work with TaskFlow.
+                </p>
+
+
+                <form id="registerForm">
+
+                    <div class="form-field">
+
+                        <label>
+                            Full name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="registerName"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label>
+                            Email address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label>
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            placeholder="Create a password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="auth-submit"
+                    >
+                        Create Account
+                    </button>
+
+                </form>
+
+
+                <p
+                    id="registerMessage"
+                    class="auth-message"
+                ></p>
+
+
+                <div class="auth-switch">
+
+                    Already have an account?
+
+                    <button
+                        type="button"
+                        onclick="showLogin()"
+                    >
+                        Sign in
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     DASHBOARD
+========================================================= -->
+
+<div
+    id="dashboardPage"
+    class="dashboard-page"
+    style="display:none;"
+>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-logo">
+                ✓
+            </div>
+
+            <span>
+                TaskFlow
+            </span>
+
+        </div>
+
+
+        <div class="sidebar-label">
+            WORKSPACE
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+
+            <button
+                class="sidebar-item active"
+                onclick="setView('all', this)"
+            >
+
+                <span class="sidebar-icon">
+                    ▦
+                </span>
+
+                <span>
+                    All Tasks
+                </span>
+
+                <span
+                    id="allCount"
+                    class="sidebar-count"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="sidebar-item"
+                onclick="setView('pending', this)"
+            >
+
+                <span class="sidebar-icon">
+                    ◷
+                </span>
+
+                <span>
+                    Pending
+                </span>
+
+                <span
+                    id="pendingCount"
+                    class="sidebar-count"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="sidebar-item"
+                onclick="setView('completed', this)"
+            >
+
+                <span class="sidebar-icon">
+                    ✓
+                </span>
+
+                <span>
+                    Completed
+                </span>
+
+                <span
+                    id="completedCount"
+                    class="sidebar-count"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="sidebar-item"
+                onclick="openSettings()"
+            >
+
+                <span class="sidebar-icon">
+                    ⚙
+                </span>
+
+                <span>
+                    Settings
+                </span>
+
+            </button>
+
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+
+            <div class="sidebar-tip">
+
+                <div class="tip-icon">
+                    ✦
+                </div>
+
+                <div>
+
+                    <strong>
+                        Stay productive
+                    </strong>
+
+                    <p>
+                        Complete your tasks
+                        and keep moving forward.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <button
+                class="profile-card"
+                onclick="openProfile()"
+            >
+
+                <div
+                    id="profileAvatar"
+                    class="profile-avatar"
+                >
+                    S
+                </div>
+
+                <div class="profile-info">
+
+                    <strong id="profileName">
+                        User
+                    </strong>
+
+                    <span id="profileEmail">
+                        user@example.com
+                    </span>
+
+                </div>
+
+                <span class="profile-arrow">
+                    ›
+                </span>
+
+            </button>
+
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div>
+
+                <span class="topbar-label">
+                    WORKSPACE
+                </span>
+
+                <span
+                    id="currentDate"
+                    class="topbar-date"
+                >
+                    Today
+                </span>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <button
+                    class="main-add-btn"
+                    onclick="openTaskModal()"
+                >
+                    <span>+</span>
+                    New Task
+                </button>
+
+
+                <button
+                    class="top-avatar"
+                    onclick="openProfile()"
+                    id="topAvatar"
+                >
+                    S
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- DASHBOARD BODY -->
+
+        <div class="dashboard-container">
+
+
+            <!-- WELCOME -->
+
+            <section class="dashboard-welcome">
+
+                <div>
+
+                    <span class="welcome-eyebrow">
+                        OVERVIEW
+                    </span>
+
+                    <h1>
+                        Good day,
+                        <span id="welcomeName">
+                            User
+                        </span>
+                        <span class="wave">
+                            👋
+                        </span>
+                    </h1>
+
+                    <p>
+                        Here's what's happening with your tasks today.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- STATS -->
+
+            <section class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon blue">
+                            ▦
+                        </div>
+
+                        <span>
+                            ALL TASKS
+                        </span>
+
+                    </div>
+
+                    <strong id="totalTasks">
+                        0
+                    </strong>
+
+                    <p>
+                        Tasks in your workspace
+                    </p>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon orange">
+                            ◷
+                        </div>
+
+                        <span>
+                            IN PROGRESS
+                        </span>
+
+                    </div>
+
+                    <strong id="pendingTasks">
+                        0
+                    </strong>
+
+                    <p>
+                        Tasks waiting to be completed
+                    </p>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon green">
+                            ✓
+                        </div>
+
+                        <span>
+                            COMPLETED
+                        </span>
+
+                    </div>
+
+                    <strong id="completedTasks">
+                        0
+                    </strong>
+
+                    <p>
+                        Tasks successfully completed
+                    </p>
+
+                </div>
+
+
+
+                <div class="stat-card productivity-card">
+
+                    <div class="productivity-top">
+
+                        <div>
+
+                            <span>
+                                PRODUCTIVITY
+                            </span>
+
+                            <strong>
+                                Completion rate
+                            </strong>
+
+                        </div>
+
+                        <strong
+                            id="completionRate"
+                            class="percentage"
+                        >
+                            0%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="progress-track">
+
+                        <div
+                            id="progressBar"
+                            class="progress-bar"
+                        ></div>
+
+                    </div>
+
+
+                    <p id="productivityText">
+                        Keep going — every completed task counts.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- TASK AREA -->
+
+            <section class="tasks-panel">
+
+
+                <div class="tasks-heading">
+
+                    <div>
+
+                        <span class="section-eyebrow">
+                            TASK MANAGEMENT
+                        </span>
+
+                        <h2 id="taskViewTitle">
+                            My Tasks
+                        </h2>
+
+                        <p id="taskViewSubtitle">
+                            Organize and track everything you need to get done.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SEARCH BAR -->
+
+                <div class="task-toolbar">
+
+                    <div class="search-box">
+
+                        <span>
+                            ⌕
+                        </span>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Search tasks..."
+                            oninput="displayTasks()"
+                        >
+
+                    </div>
+
+
+                    <select
+                        id="filterSelect"
+                        onchange="displayTasks()"
+                    >
+
+                        <option value="all">
+                            All tasks
+                        </option>
+
+                        <option value="pending">
+                            Pending
+                        </option>
+
+                        <option value="completed">
+                            Completed
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- TASK LIST -->
+
+                <div id="taskList">
+
+                    <div class="empty-state">
+
+                        <div class="empty-state-icon">
+                            ✓
+                        </div>
+
+                        <h3>
+                            No tasks found
+                        </h3>
+
+                        <p>
+                            Create your first task to get started.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+
+<!-- =========================================================
+     TASK MODAL
+========================================================= -->
+
+<div
+    id="taskModal"
+    class="modal"
+    style="display:none;"
+>
+
+    <div class="modal-card">
+
+
+        <div class="modal-header">
+
+            <div>
+
+                <span class="modal-eyebrow">
+                    TASK
+                </span>
+
+                <h2 id="modalTitle">
+                    Add New Task
+                </h2>
+
+            </div>
+
+
+            <button
+                class="modal-close"
+                onclick="closeTaskModal()"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <form id="taskForm">
+
+            <input
+                type="hidden"
+                id="taskId"
+            >
+
+
+            <div class="form-field">
+
+                <label>
+                    Task title
+                </label>
+
+                <input
+                    type="text"
+                    id="taskTitle"
+                    placeholder="What needs to be done?"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label>
+                    Description
+                </label>
+
+                <textarea
+                    id="taskDescription"
+                    placeholder="Add some details about this task..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="modal-grid">
+
+                <div class="form-field">
+
+                    <label>
+                        Priority
+                    </label>
+
+                    <select id="taskPriority">
+
+                        <option value="Low">
+                            Low
+                        </option>
+
+                        <option
+                            value="Medium"
+                            selected
+                        >
+                            Medium
+                        </option>
+
+                        <option value="High">
+                            High
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                    <label>
+                        Due date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="taskDueDate"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-actions">
+
+                <button
+                    type="button"
+                    class="cancel-btn"
+                    onclick="closeTaskModal()"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    type="submit"
+                    class="save-task-btn"
+                >
+                    Save Task
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     PROFILE MODAL
+========================================================= -->
+
+<div
+    id="profileModal"
+    class="side-modal-overlay"
+    style="display:none;"
+    onclick="closeProfileOutside(event)"
+>
+
+    <div class="profile-panel">
+
+
+        <div class="panel-header">
+
+            <div>
+
+                <span>
+                    ACCOUNT
+                </span>
+
+                <h2>
+                    My Profile
+                </h2>
+
+            </div>
+
+            <button
+                onclick="closeProfile()"
+                class="panel-close"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="large-profile-avatar">
+            <span id="largeAvatar">
+                S
+            </span>
+        </div>
+
+
+        <div class="profile-summary">
+
+            <h3 id="profileModalName">
+                User
+            </h3>
+
+            <p id="profileModalEmail">
+                user@example.com
+            </p>
+
+        </div>
+
+
+        <div class="profile-detail">
+
+            <div>
+                <span>
+                    Account status
+                </span>
+
+                <strong class="active-status">
+                    ● Active
+                </strong>
+            </div>
+
+
+            <div>
+                <span>
+                    Workspace
+                </span>
+
+                <strong>
+                    TaskFlow
+                </strong>
+            </div>
+
+        </div>
+
+
+        <button
+            class="panel-primary-btn"
+            onclick="closeProfile(); openSettings();"
+        >
+            Edit Profile
+        </button>
+
+
+        <button
+            class="panel-secondary-btn"
+            onclick="logout()"
+        >
+            Sign Out
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     SETTINGS MODAL
+========================================================= -->
+
+<div
+    id="settingsModal"
+    class="side-modal-overlay"
+    style="display:none;"
+    onclick="closeSettingsOutside(event)"
+>
+
+    <div class="settings-panel">
+
+
+        <div class="panel-header">
+
+            <div>
+
+                <span>
+                    SETTINGS
+                </span>
+
+                <h2>
+                    Profile Settings
+                </h2>
+
+            </div>
+
+            <button
+                onclick="closeSettings()"
+                class="panel-close"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="settings-section">
+
+            <h3>
+                Personal information
+            </h3>
+
+            <p>
+                Update how your name appears across TaskFlow.
+            </p>
+
+
+            <div class="form-field">
+
+                <label>
+                    Display name
+                </label>
+
+                <input
+                    type="text"
+                    id="settingsName"
+                    placeholder="Your name"
+                >
+
+            </div>
+
+
+            <div class="form-field">
+
+                <label>
+                    Email address
+                </label>
+
+                <input
+                    type="email"
+                    id="settingsEmail"
+                    readonly
+                >
+
+                <small>
+                    Your account email is linked to authentication.
+                </small>
+
+            </div>
+
+
+            <button
+                class="panel-primary-btn"
+                onclick="saveProfileSettings()"
+            >
+                Save Changes
+            </button>
+
+        </div>
+
+
+        <div class="settings-info-card">
+
+            <span>
+                ✦
+            </span>
+
+            <div>
+
+                <strong>
+                    Your workspace
+                </strong>
+
+                <p>
+                    Your tasks are securely associated
+                    with your account.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div
+    id="toast"
+    class="toast"
+>
+
+    <span id="toastIcon">
+        ✓
+    </span>
+
+    <span id="toastMessage">
+        Success
+    </span>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
